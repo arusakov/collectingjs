@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example</title>
+</head>
+<body>
+<form>
+      Number: <input id="cardnumber"/><br/>
+      Cardholder: <input id="cardholder"/><br/>
+      <input type="button" id="btn" value="test"/>
+</form>
+
+<script src="dist/collecting.min.js"></script>
+<script>
+  COLLECTINGJS.watch('cardnumber');
+  COLLECTINGJS.watch('cardholder');
+
+  document.getElementById('btn').addEventListener('click', function () {
+    var devinfo = COLLECTINGJS.devinfo();
+    var events = COLLECTINGJS.events();
+
+    console.log(devinfo, events);
+
+    // then
+    // transfer devinfo and events via XmlHTTPRequest, use POST
+  });
+</script>
+</body>
+</html>
