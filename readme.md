@@ -1,5 +1,7 @@
 Requirements
 ------------
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arusakov/collectingjs.svg)](https://greenkeeper.io/)
 * NodeJS + npm
 * npm global packages: gulp
 
